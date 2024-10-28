@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background: linear-gradient(rgb(47, 65, 84), rgb(97, 81, 125, 0.7), rgb(187, 59, 112,0.6));
+  color: white;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  padding: 1% 1.5%;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+#tribute-info {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0 0 1.5%;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 1.5% 0;
+}
+
+img {
+  box-shadow: 0 0 20px 0 #FCFAB2; 
+}
+
+#img-caption {
+  padding: 0.5%;
+  text-align: center;
+  width: 50%;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#content {
+  padding-left: 22%;
+  padding-right: 22%;
+  font-size: 1.25em;
+}
+
+#quote {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 1.5% 0;
+  border: 1px solid rgba(252, 250, 178, 0.5);
+  background-color: rgba(252, 250, 178, 0.15);
+}
+
+.italic {
+  font-style: italic;
+}
+
+a {
+  color: #8cc7f5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FCFAB2;
+}
+
+#wiki {
+  text-align: center;
+  padding: 1.5% 0;
+}
+
+.copyright {
+  font-size: 1em;
+  text-align: center;
+  padding: 1.5% 0 0;
+}
+
+.disclaimer {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 1.5% 0;
+}

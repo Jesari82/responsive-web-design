@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <title>User Preferences Survey</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+ </head>
+
+ <body>
+  <h1 id="title">User Preferences Survey</h1>
+  <p id="description">Please fill out the form to share your preferences with us. Your feedback is appreciated!<p>
+
+  <form id="survey-form">
+
+    <fieldset>
+      <label id="name-label">Name: <input id="name" type="text" placeholder="Your name" required /></label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="Your Email" required /></label>
+      <label id="number-label">Number: <input id="number" type="number" min="5" max="12" placeholder="Your number" required /></label>
+    </fieldset>
+
+    <fieldset>
+      <label id="dropdown-label">Select your preferred device:
+        <select id="dropdown">
+          <option>Laptop</option>
+          <option>Smartphone</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What is your preferred communication method?</legend>
+      <label id="call-label"><input id="call" value="call" type="radio" name="communication" class="inline" checked />Call</label>
+      <label id="sms-label"><input id="sms" value="sms" type="radio" name="communication" class="inline" />SMS</label>
+            <label id="mail-label"><input id="mail" value="mail" type="radio" name="communication" class="inline" />Email</label>
+    </fieldset>
+    <fieldset>
+      <legend>Which features do you use?</legend>
+      <label><input name="prefer" type="checkbox" value="notifications" class="input-checkbox" /> Notifications</label>
+      <label><input name="prefer" type="checkbox" value="darkmode" class="input-checkbox" /> Dark Mode</label>
+      <label><input name="prefer" type="checkbox" value="layout" class="input-checkbox" /> Customizable Layout</label>
+      <label><input name="prefer" type="checkbox" value="multi-language" class="input-checkbox" /> Multi-language Support</label>
+      <label><input name="prefer" type="checkbox" value="offline" class="input-checkbox" /> Offline Access</label>
+      <label><input name="prefer" type="checkbox" value="updates" class="input-checkbox" /> Frequent Updates</label>
+    </fieldset>
+
+    <fieldset>
+      <label>Additional comments or suggestions:
+        <textarea id="suggestions" rows="5" cols="30" placeholder="Please share any additional thoughts or suggestions you have about our service. Your feedback helps us improve!"></textarea>
+      </label>
+    </fieldset>
+    
+    <input id="submit" type="submit" value="Submit" />
+  
+  </form>
+ </body>
+</html>

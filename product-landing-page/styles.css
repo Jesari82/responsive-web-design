@@ -1,0 +1,392 @@
+html {
+  font-size: 100%;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  background-color: rgba(28,33,31,1);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 185px;
+  background: linear-gradient(90deg, rgba(28,33,31,1) 0%, rgba(51,82,71,1) 35%, rgba(32,83,66,1) 100%);
+  z-index: 1000;
+}
+
+#header-img {
+  padding: 15px;
+  width: 100%; 
+  max-width: 410px;
+  height: auto;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15%;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 8%;
+  left: 50%;
+  width: 50%;
+  text-align: center;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem; 
+}
+
+header li a:hover {
+  color: #6bb39b;
+}
+
+#hero-section {
+  position: relative;
+  top: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#hero-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+form {
+  position: absolute;
+  padding: 20px 0;
+  width: auto;
+  max-width: 80%;
+  height: auto;
+  border: 15px solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 15%;
+  text-align: center;
+  z-index: 1;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#form-heading {
+  font-weight: bold;
+  color: black;
+  border: 15px solid rgba(255, 255, 255, 0);
+  font-size: 2rem;
+  z-index: 1;
+}
+
+#submit {
+  font-weight: bold;
+  color: white;
+  border: 8px solid #6bb39b;
+  background-color: #6bb39b;
+  margin: 20px 0 0 0;
+  padding: 3px;
+  font-size: 1.15rem;
+}
+
+#email {
+  font-size: 1.15rem;
+}
+
+h2 {
+  font-weight: bold;
+  color: #6bb39b;
+  margin: 20px 0 0 0;
+  font-size: 2rem;
+  padding: 15px 0 40px;
+}
+
+#features {
+  position: relative;
+  top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.feature-item {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  text-align: start;
+  color: #6bb39b;
+}
+
+p {
+  font-size: 1.15rem;
+  color: white;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  text-align: start;
+}
+
+.feature-content::first-letter {
+  color: #6bb39b;
+  font-size: 1.25rem;
+}
+
+#how-it-works {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+iframe { 
+  width: 50%; 
+  aspect-ratio: 850 / 478; 
+}
+
+#pricing {
+  position: relative;
+  top: 250px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.products {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.product-item {
+  border: 1px solid white;
+  width: calc(70% / 3);
+  height: auto;
+  min-height: 250px;
+  margin: 10px;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-item h3 {
+  color: #6bb39b;
+  background-color: #313131;
+  text-align: center;
+  height: 80px;
+  padding-top: 20px; 
+  border-bottom: thick double #767676;
+}
+
+.price {
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  height: 70px;
+  padding: 30px 10px 10px;  
+}
+
+.price::first-letter {
+  color: #6bb39b;
+  font-size: 1.5rem;
+}
+
+.product-item p {
+  color: white;
+  text-align: center;
+  height: 100px;
+  padding: 15px 10px 30px;  
+}
+
+.btn {
+  font-weight: bold;
+  color: white;
+  border: 8px solid #6bb39b;
+  background-color: #6bb39b;
+  margin: 10px 0 20px;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  vertical-align: baseline;
+}
+
+footer {
+  position: relative;
+  top: 300px;
+  text-align: end;
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(90deg, rgba(28,33,31,1) 0%, rgba(51,82,71,1) 35%, rgba(32,83,66,1) 100%);
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+  column-gap: 1.5em;
+  font-size: 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  padding: 10px 0px 30px 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #c3c3c3;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    height: 120px;
+  }
+
+  #header-img {
+    max-width: 30%;
+  }
+
+  .nav-link {
+    font-size: 1rem;  
+  }
+
+  #hero-section {
+    top: 110px;
+  }
+
+  form {
+    padding: 30px 0;
+    max-width: 80%;
+    height: 65%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #form-heading {
+    font-size: 1.3rem;
+    z-index: 1;
+  }
+
+  #submit {
+    border: 4px solid #6bb39b;
+    font-size: 1rem;
+  }
+
+  #email {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  #features h2:first-child {
+    margin-top: -50px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    padding-bottom: 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .feature-content::first-letter {
+    font-size: 1rem;
+  }
+
+  #how-it-works {
+    margin-bottom: -15px;
+  }
+
+  #pricing {
+    padding-bottom: 10px;
+  }
+
+  .product-item {
+    width: calc(80% / 3);
+    margin: 5px;
+  }
+
+  .product-item h3 {
+    height: 64px;
+    padding-top: 20px; 
+    border-bottom: thick double #767676;
+  }
+
+  .price {
+    font-size: 1.1rem;
+    height: 50px;
+    padding: 20px 10px 10px;  
+  }
+
+  .price::first-letter {
+    font-size: 1.2rem;
+  }
+
+  .product-item p {
+    font-size: 0.81rem;
+    height: 100px;
+    padding: 10px 10px 0;  
+  }
+
+  .btn {
+    border: 4px solid #6bb39b;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+
+  footer {
+    top: 280px;
+  }
+
+  footer ul {
+    padding-top: 20px;
+    font-size: 0.8rem
+  }
+
+  footer p {
+    padding: 10px 0 30px;
+    font-size: 0.8rem
+  }
+}

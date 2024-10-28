@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Technical Documentation Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header class="nav-header">Web Development Essentials</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
+        <li><a class="nav-link" href="#CSS_Basics">CSS Basics</a></li>
+        <li><a class="nav-link" href="#Introduction_to_JavaScript">Introduction to JavaScript</a></li>
+        <li><a class="nav-link" href="#Responsive_Design">Responsive Design</a></li>
+        <li><a class="nav-link" href="#Web_Development_Tools">Web Development Tools</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_HTML">
+        <header class="section-header">Introduction to HTML</header>
+        <article>
+          <h3>What is HTML?</h3>
+          <p>HTML (HyperText Markup Language) is the foundational language used to create the structure of web pages. It uses a system of tags to define elements like text, links, images, and more. Each element provides a specific function, allowing browsers to interpret and render the content correctly. HTML works in combination with CSS and JavaScript to create fully functional web pages.</p>
+          <h3>Basic HTML structure</h3>
+          <p>Every HTML document follows a standard structure to ensure proper rendering:</p>
+            <img class="html_img" src="https://lenadesign.org/wp-content/uploads/2021/06/html-basic-structure.jpg" alt="HTML basic structure">
+          <h3>Important HTML tags</h3>
+          <p>Some essential tags that define the structure and content of web pages:</p>
+            <ul>
+              <li class="hascode"><code>&lt;div&gt;</code>: Defines a section or a container in a document.</li>
+              <li class="hascode"><code>&lt;header&gt;</code>: Represents the header section of a page.</li>
+              <li class="hascode"><code>&lt;footer&gt;</code>: Defines the footer section with contact info, links, etc.</li>
+              <li class="hascode"><code>&lt;section&gt;</code>: Groups related content within a page.</li>
+            </ul>          
+        </article>
+      </section>
+      
+      <section class="main-section" id="CSS_Basics">
+        <header class="section-header">CSS Basics</header>
+        <article>
+          <h3>What is CSS?</h3>
+          <p>CSS (Cascading Style Sheets) is a language that controls the presentation of HTML elements. It allows developers to change colors, layouts, fonts, and positioning to create visually appealing pages. CSS makes it easier to keep styles consistent across multiple pages of a website by defining a set of rules in one place.</p>
+          <h3>Selectors and properties</h3>
+          <p>Selectors target HTML elements, and properties define how these elements are styled:</p>
+            <ul>
+              <li class="hascode"><strong>Element selector</strong>: Targets HTML elements by name, e.g., <code>h1</code>.</li>
+              <li class="hascode"><strong>Class selector</strong>: Targets elements with a specific class, e.g., <code>.example</code>.</li>
+              <li class="hascode"><strong>ID selector</strong>: Targets a unique element by its ID, e.g., <code>#header</code>.</li>
+            </ul>          
+          <h3>The Box Model</h3>
+          <p>The CSS Box Model describes how elements are spaced and sized:</p>
+            <ul>
+              <li><strong>Content</strong>: The actual content of the element.</li>
+              <li><strong>Padding</strong>: Space between the content and the border.</li>
+              <li><strong>Border</strong>: A line around the element.</li>
+              <li><strong>Margin</strong>: Space outside the border, separating the element from others.</li>
+            </ul>          
+        </article>
+      </section>
+      
+      <section class="main-section" id="Introduction_to_JavaScript">
+        <header class="section-header">Introduction to JavaScript</header>
+        <article>
+          <h3>What is JavaScript?</h3>
+          <p>JavaScript is a programming language that allows you to add interactivity to web pages. It enables tasks like form validation, creating dynamic content, or responding to user inputs. JavaScript runs on the client side (in the browser) and works closely with HTML and CSS to enhance user experience.</p>
+          <h3>Variables and data types</h3>
+          <p>Variables store data that can be used and modified in your script:</p>
+            <ul>
+              <li class="hascode"><strong>let</strong>: Defines a variable that can be changed, e.g., <code>let score = 0;</code>.</li>
+              <li class="hascode"><strong>const</strong>: Defines a constant value, e.g., <code>const pi = 3.14;</code>.</li>
+              <li><strong>Data types</strong>: Common types include numbers, strings, booleans, and arrays.</li>
+            </ul>          
+          <h3>Functions and loops</h3>
+          <p>Functions help organize code into reusable blocks, while loops allow repetitive actions:</p>
+            <ul>
+              <li class="hascode"><strong>Function</strong>: A block of code that runs when called, e.g., <code>function add(a, b) { return a + b; }</code>.</li>
+              <li class="hascode"><strong>Loop</strong>: Repeats actions, e.g., <code>for (let i = 0; i < 10; i++) { ... }</code>.</li>
+            </ul>          
+          <h3>DOM manipulation</h3>
+          <p>The Document Object Model (DOM) represents the structure of an HTML page, which JavaScript can modify:</p>
+            <ul>
+              <li class="hascode"><strong>getElementById</strong>: Selects an element by its ID, e.g., <code>document.getElementById('header')</code>.</li>
+              <li class="hascode"><strong>querySelector</strong>: Selects elements using a CSS selector, e.g., <code>document.querySelector('.class')</code>.</li>
+            </ul>
+          
+        </article>
+      </section>
+
+      <section class="main-section" id="Responsive_Design">
+        <header class="section-header">Responsive Design</header>
+        <article>
+          <h3>What is responsive design?</h3>
+          <p>Responsive design ensures that web pages adapt to different screen sizes, from desktops to mobile devices. A responsive site automatically resizes and repositions elements to improve readability and usability on various devices. This is achieved using flexible grids, layouts, and media queries.</p>
+            <ul>
+              <li class="hascode"><code>@media (max-width: 600px)</code>: Styles for screens narrower than 600 pixels.</li>
+              <li class="hascode"><code>@media (max-width: 1024px)</code>: Styles for screens wider than 1024 pixels.</li>
+            </ul>          
+          <h3>Media Queries</h3>
+          <p>Media queries apply different styles depending on the screen size or device type:</p>
+          <h3>Mobile-first approach</h3>
+          <p>In this approach, developers design for smaller screens first, then scale up for larger devices. This ensures that the website works well on mobile devices and offers a more streamlined experience.</p>
+          <h3>Flexbox and Grid</h3>
+          <p>These CSS techniques help create flexible layouts:</p>
+            <ul>
+              <li><strong>Flexbox</strong>: Aligns and distributes space within a container, even when screen size changes.</li>
+              <li><strong>Grid</strong>: Divides the page into rows and columns, creating complex layouts with ease.</li>
+            </ul>          
+        </article>
+      </section>
+      
+      <section class="main-section" id="Web_Development_Tools">
+        <header class="section-header">Web Development Tools</header>
+        <article>
+          <h3>What are web development tools?</h3>
+          <p>Web development tools help developers build, test, and debug websites efficiently. These tools range from browser developer tools to version control systems like Git, making the coding process smoother and more manageable.</p>
+          <h3>Browser developer tools</h3>
+          <p>Browsers like Chrome and Firefox offer built-in tools for debugging and inspecting code:</p>
+            <ul>
+              <li><strong>Elements</strong>: View and edit HTML and CSS in real-time.</li>
+              <li><strong>Console</strong>: Run JavaScript and view error messages.</li>
+            </ul>          
+          <h3>Code editors</h3>
+          <p>
+            Developers use specialized editors to write and manage code:</p>
+            <ul>
+              <li><strong>VS Code</strong>: A popular editor with syntax highlighting, extensions, and Git integration.</li>
+              <li><strong>Sublime Text</strong>: Lightweight, fast, and supports multiple languages.</li>
+            </ul>          
+          <h3>Git and GitHub</h3>
+          <p>Version control is essential for tracking changes and collaborating on projects:</p>
+            <ul>
+              <li><strong>Git</strong>: A distributed version control system for tracking changes in code.</li>
+              <li><strong>GitHub</strong>: A platform for hosting repositories and collaborating with others.</li>
+            </ul>          
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
